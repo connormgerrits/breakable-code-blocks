@@ -1,0 +1,28 @@
+<!-- 
+When running this file in your browser, it should produce a blank webpage
+with a single button in the top left corner with text saying "On". Upon 
+pressing the button, its text should switch to "Off", and vice versa each
+time the button is pushed. -->
+
+<html>
+
+  <head>
+    <script>
+      function change() {
+        var button_text = document.getElementById("button_1")
+        if (button_text.value === "On") {
+          button_text.value = "Off"
+        }
+        else {
+          button_text.value = "On"
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  
+  <body>
+      <input id="button_1" type="button" value="On" onclick="change()"></input>
+  </body>
+
+</html>

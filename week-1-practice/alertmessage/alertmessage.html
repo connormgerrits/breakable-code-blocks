@@ -1,0 +1,35 @@
+<!-- 
+This example is very similar to one you already went over in class,
+with a few minor alterations. When running this file in your browser,
+it should show a mostly blank webpage with a thin grey area at the top
+of the page containing two text boxes asking for your first and last
+names. Upon entering your first and last names and hitting the "Submit"
+button, an alert will pop up saying "Nice to meet you 'firstname' 'lastname'!"
+-->
+
+<html>
+
+  <head>
+    <script>
+      function greeting() {
+        var firstName = document.getElementById('firstname').value
+        var lastName = document.getElementById('lastname').value
+        alert('Nice to meet you ' + firstName + ' ' + lastName + '!')
+      }
+    </script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <div>What's your first name?
+        <input type="text" name="firstname" id="firstname" />
+      </div>
+      <div>What's your last name?
+        <input type="text" name="lastname" id="lastname" />
+      </div>
+      <input type="button" value="Submit" style="margin: auto;" onclick="greeting()" />
+    </div>
+  </body>
+
+</html>

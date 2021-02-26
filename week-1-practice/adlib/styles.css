@@ -1,0 +1,24 @@
+.container {
+    width: 100%;
+    background-color: #2abdc2;
+    border: 1px solid;
+    border-radius: 4px;
+    margin: auto;
+    display: inline-flex;
+}
+.container_2 {
+    width: 100%;
+    background-color: #ffffff;
+    display: inline-flex;
+    justify-content: center;
+    padding: 15px;
+}
+.inner_div {
+    margin-left: 10px;
+}
+.word {
+    width: 100px;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+}
+

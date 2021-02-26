@@ -1,0 +1,40 @@
+<!-- 
+When running this file in your browser, it should show a mostly blank 
+webpage with a thin grey area at the top of the page containing a fragmented
+sentence with empty text boxes asking where you can fill in the words for the
+rest of the sentence. After doing so, you can hit the "Submit" button and see
+the entire sentence displayed in the 'div' element directly beneath it. (I know,
+kind of pointless, but humor me)
+-->
+
+<html>
+
+  <head>
+    <script>
+      function showSentence() {
+        var firstWord = document.getElementById('firstword')
+        var secondWord = document.getElementById('secondword')
+        var thirdWord = document.getElementById('thirdword')
+        document.getElementById("result").innerHTML = "Have you ever been to " + firstword.value + "?" + " I absolutely love their " + secondword.value + "." + " I'd like to bring my " + thirdword.value + " there someday."
+      }
+    </script>
+    <link rel="stylesheet" href="./styles.css"/>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="inner_div">Have you ever been to
+        <input type="text" id="firstword" class="word"/>?
+      </div>
+      <div class="inner_div">I absolutely love their
+        <input type="text" id="secondword" class="word"/>.
+      </div>
+      <div class="inner_div">I'd like to bring my
+        <input type="text" id="thirdword" class="word"/> there someday.
+      </div>
+      <input type="button" value="Submit" style="margin: auto;" onclick="showSentence()" />
+    </div>
+    <div id="result" class="container_2"></div>
+  </body>
+
+</html>
